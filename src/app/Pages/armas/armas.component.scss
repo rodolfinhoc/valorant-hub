@@ -1,0 +1,52 @@
+.content {
+  padding: 10px;
+}
+
+img {
+  padding: 15px;
+  width: 270px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dividerText {
+  font-size: 20px;
+}
+
+.carousel {
+  max-width: 800px;
+}
+
+.img-card {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+}
+
+.card {
+  padding: 15px;
+  display: grid;
+  height: 400px;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.badge-cost {
+  background-color: rgb(85, 176, 85);
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.badge {
+  padding: 2px 5px;
+}

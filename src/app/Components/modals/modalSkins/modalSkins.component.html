@@ -1,0 +1,20 @@
+<p-progressBar *ngIf="loading" mode="indeterminate" [style]="{'height': '6px'}"></p-progressBar>
+<div *ngIf="!loading" class="sm:col-12 md:col-12 lg:col-12 xl:col-12">
+  <p-listbox [options]="skins" class="listbox">
+    <ng-template let-skins pTemplate="item">
+      <div class="flex align-items-center gap-2">
+        <p-image src="{{skins.displayIcon}}" width="250" [preview]="true"></p-image>
+        <div class="skin-name">{{ skins.displayName }}</div>
+        <p-divider layout="vertical"></p-divider>
+        <div>
+          <ul *ngFor="let chroma of skins.chromas.slice(1)">
+            <div class="grid">
+              <p-image src="{{chroma.fullRender}}" width="100" class="sm:col-6 md:col-6 lg:col-6 xl:col-6" [preview]="true"></p-image>
+              <li class="sm:col-6 md:col-6 lg:col-6 xl:col-6">{{chroma.displayName}}</li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </ng-template>
+  </p-listbox>
+</div>
